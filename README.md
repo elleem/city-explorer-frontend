@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Lauren Main
-**Version**: 1.0.0
+**Version**: 1.0.1
 
 ## Overview
 [View my Live site at netlify](https://laurenmainportfolio.netlify.app/)
