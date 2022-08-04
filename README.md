@@ -17,7 +17,7 @@ JavaScript, React, Bootstrap, Node.js
 <ul>
 <li>Initial setup: 8/2/2022</li>
 <li> Locations API added with lon/lat 8/3/2022</li>
-<li>
+<li> 
 <li>
 <li>
 </ul>
@@ -40,7 +40,7 @@ Start time: 10:30pm-11:10pm and 5:30pm to 6:15pm
 
 Finish time: 6:15pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 85 minutes
 
 ################################################################
 
@@ -48,11 +48,11 @@ Name of feature: Map
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: _____
+Start time: 9:30pm
 
-Finish time: _____
+Finish time: 10:30pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 60 minutes
 
 ################################################################
 
@@ -60,9 +60,9 @@ Name of feature: Errors
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: _____
+Start time: 8:25pm to 9:30pm
 
-Finish time: _____
+Finish time: ____
 
 Actual time needed to complete: _____
 

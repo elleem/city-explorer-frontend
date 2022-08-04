@@ -2,3 +2,16 @@
   text-align: center;
 }
 
+#form{
+  width: 30%;
+  margin: 1rem auto;
+  text-align: center;
+  padding: .5rem; 
+}
+
+#map{
+  background-color: rgba(243, 243, 148, 0.708);
+  padding: 2rem;
+  width: 100%;
+  margin: auto;
+}
