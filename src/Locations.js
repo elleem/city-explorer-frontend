@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Form from 'react-bootstrap/Form';
 
 
 class Locations extends React.Component{
@@ -24,18 +25,18 @@ class Locations extends React.Component{
 render () {
   console.log(this.state); 
   return (
-    <div className="App">
-      <input
+    <Form.Group id="form">
+      <Form.Control
       onChange={(e)=>this.setState({citySearch: e.target.value})}
-      placeholder = 'search for a city'></input>
-      <button as="input" type="submit" value="Submit" variant="primary" onClick={this.getLocation}>Explore!</button>
+      placeholder = 'search for a city'/>
+      <button variant="primary" type="submit" onClick={this.getLocation}>Explore!</button>
       {this.state.locationObj.place_id &&
       <>
       <h2>{this.state.locationObj.display_name}</h2>
       <p>Lat/Lon: {this.state.locationObj.lat}, {this.state.locationObj.lon}</p>
       </>
       } 
-    </div>
+     </Form.Group>
   );
 }
 }
