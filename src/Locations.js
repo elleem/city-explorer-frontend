@@ -43,7 +43,7 @@ render () {
       <Form.Control
       onChange={(e)=>this.setState({citySearch: e.target.value})}
       placeholder = 'search for a city'/>
-      <button variant="primary" type="submit" onClick={this.getLocation}>Explore!</button>
+      <button variant="dark" type="submit" onClick={this.getLocation}>Explore!</button>
       {this.state.locationObj.place_id &&
       <>
       <CityMap

@@ -9,7 +9,7 @@ class CityMap extends React.Component {
     return(
         <Card id="map">
           <Card.Body>
-          <Card.Title>City : {this.props.name}</Card.Title>
+          <Card.Title>City: {this.props.citySearch}</Card.Title>
           <Card.Text>Latitude: {this.props.lat}</Card.Text>
           <Card.Text>Longitude: {this.props.lon}</Card.Text>
           <Card.Img id="map-image"style={{width: '100%'}}
