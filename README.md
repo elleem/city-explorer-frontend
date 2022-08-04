@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Lauren Main
-**Version**: 1.0.0
+**Version**: 1.0.1
 
 ## Overview
 [View my Live site at netlify](https://laurenmainportfolio.netlify.app/)
@@ -28,7 +28,7 @@ Collaboration with Monika Davies
 
 ## Whiteboard of WRRC
 
-![Lab 06 Whiteboard](/images/lab06miro.jpg)
+![Lab 06 Whiteboard](/src/images/lab06miro.jpg)
 
 ## Features for Lab 06
 
