@@ -48,11 +48,11 @@ Name of feature: Map
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: _____
+Start time: 9:30pm
 
-Finish time: _____
+Finish time: 10:30pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 60 minutes
 
 ################################################################
 
@@ -60,7 +60,7 @@ Name of feature: Errors
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: _____
+Start time: 8:25pm to 9:30pm
 
 Finish time: _____
 
