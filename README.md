@@ -4,7 +4,7 @@
 **Version**: 1.0.1
 
 ## Overview
-[View my Live site at netlify](https://laurenmainportfolio.netlify.app/)<br>
+[View my Live site at netlify](https://elleemcityexplorer.netlify.app/)<br>
 Users of City Explorer, will be able to enter the name of a location so that they can see the exact latitude and longitude of that location, see a map of the city, clear error messages if something goes wrong, see weather infromation for the location, and finally see movies related to the locations that I searched.  
 
 ## Getting Started
