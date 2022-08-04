@@ -8,7 +8,7 @@ class Error extends Component{
     return(
       <Alert variant="danger">
         <p>
-        Error: {this.props.message}
+        Error: {this.props.error.message}
         </p>
       </Alert>
     )
