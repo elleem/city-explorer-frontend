@@ -29,7 +29,7 @@ render () {
       <input
       onChange={(e)=>this.setState({citySearch: e.target.value})}
       placeholder = 'search for a city'></input>
-      <button onClick={this.getLocation}>Explore!</button>
+      <button as="input" type="submit" value="Submit" variant="primary" onClick={this.getLocation}>Explore!</button>
       {this.state.locationObj.place_id &&
       <>
       <h2>{this.state.locationObj.display_name}</h2>
