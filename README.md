@@ -28,7 +28,7 @@ Collaboration with Monika Davies
 
 ## Whiteboard of WRRC
 
-![Lab 06 Whiteboard](/src/images/lab06miro.jpg)
+![Lab 06 Whiteboard](/images/lab06miro.jpg)
 
 ## Features for Lab 06
 
