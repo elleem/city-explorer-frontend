@@ -6,7 +6,10 @@
   width: 30%;
   margin: 1rem auto;
   text-align: center;
-  padding: .5rem; 
+  padding: .75rem; 
+}
+#button{
+  margin: 1rem; 
 }
 
 #map{
