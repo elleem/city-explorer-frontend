@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Error from "./Error";
 import CityMap from "./CityMap";
+import Weather from "./Weather";
 
 class Locations extends React.Component {
   constructor(props) {
@@ -55,6 +56,10 @@ class Locations extends React.Component {
         )}
         {this.state.error&&
         <Error error={this.state.error} />}
+
+        {/* //locations will render weather component */}
+        <Weather
+        citySearch = {this.state.citySearch}/>
       </Form.Group>
     );
   }
