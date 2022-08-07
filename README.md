@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Lauren Main
-**Version**: 1.0.3
+**Version**: 1.0.4
 
 ## Overview
 [View my Live site at netlify](https://elleemcityexplorer.netlify.app/)<br>
@@ -18,6 +18,8 @@ JavaScript, React, Bootstrap, Node.js
 <li>Initial setup: 8/2/2022</li>
 <li> Locations API added with lon/lat 8/3/2022</li>
 <li> Error message component added 8/4/2022 </li>
+<li> Server added 8/6/2022 </li>
+<li>
 <li>
 <li>
 </ul>
@@ -28,7 +30,7 @@ Collaboration with Monika Davies
 
 ## Whiteboard of WRRC
 
-![Lab 06 Whiteboard](public/images/lab06miro.jpg)
+![Lab 06 Whiteboard](images/lab06miro.jpg)
 
 ## Features for Lab 06
 
@@ -67,25 +69,55 @@ Finish time: 9:30pm
 Actual time needed to complete: 115 minutes
 
 
+## Credit and Collaborations
+Collaboration with Alejandro Rivera
+
 ## Whiteboard of WRRC
 
-![Lab 06 Whiteboard](images/lab06miro.jpg)
+![Lab 07 Whiteboard](images/lab07miro.jpg)
 
 ## Features for Lab 07
 
-## Whiteboard of WRRC
+Name of feature: Weather
 
-![Lab 07 Whiteboard](images/)
+Estimate of time needed to complete: 120 minutes
+
+Start time: 2:45pm to 5:00pm 9:30pm to 9:45pm 
+
+Finish time: 5:00pm
+
+Actual time needed to complete: 135 minutes
+
+################################################################
+
+Name of feature: Errors
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 5:00pm
+
+Finish time: 5:30pm 
+
+Actual time needed to complete: 30 minutes
+
+################################################################
+
+## Whiteboard of WRRC
+Collaboration with
+
+![Lab 08 Whiteboard](images/)
 
 ## Features for Lab 08
 
 ## Whiteboard of WRRC
+Collaboration with
 
-![Lab 08 Whiteboard](images/)
+![Lab 09 Whiteboard](images/)
 
 ## Features for Lab 09
 
 ## Whiteboard of WRRC
+Collaboration with
 
 ![Lab 10 Whiteboard](images/)
 
