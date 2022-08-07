@@ -1,14 +1,14 @@
 # City Explorer
 
 **Author**: Lauren Main
-**Version**: 1.0.1
+**Version**: 1.0.3
 
 ## Overview
 [View my Live site at netlify](https://elleemcityexplorer.netlify.app/)<br>
 Users of City Explorer, will be able to enter the name of a location so that they can see the exact latitude and longitude of that location, see a map of the city, clear error messages if something goes wrong, see weather infromation for the location, and finally see movies related to the locations that I searched.  
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+[Check out the Code Fellows guide here](https://trello.com/b/SCR1ag4c/city-explorer)
 
 ## Architecture
 JavaScript, React, Bootstrap, Node.js
@@ -17,7 +17,7 @@ JavaScript, React, Bootstrap, Node.js
 <ul>
 <li>Initial setup: 8/2/2022</li>
 <li> Locations API added with lon/lat 8/3/2022</li>
-<li> 
+<li> Error message component added 8/4/2022 </li>
 <li>
 <li>
 </ul>
@@ -60,11 +60,11 @@ Name of feature: Errors
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: 8:25pm to 9:30pm
+Start time: 8:25pm to 9:30pm, 8:30pm to 9:30pm
 
-Finish time: ____
+Finish time: 9:30pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 115 minutes
 
 
 ## Whiteboard of WRRC

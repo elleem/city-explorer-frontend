@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from "react";
 import Alert from 'react-bootstrap/Alert';
 
-class Error extends Component{
+class Error extends React.Component{
 
   render(){
     return(
