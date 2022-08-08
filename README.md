@@ -30,7 +30,7 @@ Collaboration with Monika Davies
 
 ## Whiteboard of WRRC
 
-![Lab 06 Whiteboard](images/lab06miro.jpg)
+![Lab 06 Whiteboard](public/images/lab06miro.jpg)
 
 ## Features for Lab 06
 
@@ -74,7 +74,7 @@ Collaboration with Alejandro Rivera
 
 ## Whiteboard of WRRC
 
-![Lab 07 Whiteboard](images/lab07miro.jpg)
+![Lab 07 Whiteboard](public/images/lab07miro.jpg)
 
 ## Features for Lab 07
 
