@@ -1,5 +1,6 @@
 import axios from 'axios';
-import React from 'react'; 
+import React from 'react';
+import { Accordion,Card } from 'react-bootstrap';
 
 class Weather extends React.Component{
   constructor(props){
@@ -18,16 +19,18 @@ class Weather extends React.Component{
     return (
       <>
       <button onClick = {this.getWeather}> Get Weather</button>
-      <ul>
+      <Accordion>
         {this.state.weather.length > 0 && this.state.weather.map((forecast, idx) =>(
-          <li key = {idx}>
+          <Card key = {idx}>
             <p>{forecast.description}: {forecast.date}</p>
-          </li>
+          </Card>
         ))}
-      </ul>
+      </Accordion>
       </>
     )
   }
 }
 
 export default Weather; 
+
+

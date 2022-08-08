@@ -19,12 +19,13 @@ class Locations extends React.Component {
     };
   }
 
-  getLocation = async () => {
+  getLocation = async (citySearch) => {
     try {
       const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.citySearch}&format=json`;
       const response = await axios.get(url);
       //try catch conditional catches the error
       this.setState({ locationObj: response.data[0], error: null });
+      this.getWeather({citySearch}); 
     } catch (error) {
       if (error.response) {
         let message = `${error.response.data.error}. ${error.message}${error.code}`;
@@ -67,18 +68,9 @@ class Locations extends React.Component {
 
         {/* //locations will render weather component */}
 
-        <ul>
+        <>
           <Weather citySearch={this.state.citySearch} />
-        <Button onClick={this.getWeather}> Get Weather</Button>
-          {this.state.weather.length > 0 &&
-            this.state.weather.map((forecast, idx) => (
-              <li key={idx}>
-                <p>
-                  {forecast.description}: {forecast.date}
-                </p>
-              </li>
-            ))}
-        </ul>
+        </>
       </Form.Group>
     );
   }
