@@ -15,6 +15,7 @@ class Locations extends React.Component {
       lat: 0.0,
       lon: 0.0,
       error: null,
+      weather: [],
     };
   }
 
@@ -35,15 +36,23 @@ class Locations extends React.Component {
     }
   };
 
-  render() {
+  getWeather = async () => {
+    const url = `${process.env.REACT_APP_WEATHER_KEY}/weather?searchQuery=${this.props.citySearch}`;
+    const response = await axios.get(url);
+    console.log(response);
+    this.setState({ weather: response.data });
+  };
 
+  render() {
     return (
       <Form.Group id="form">
         <Form.Control
           onChange={(e) => this.setState({ citySearch: e.target.value })}
           placeholder="search for a city"
         />
-        <Button id="button" onClick={this.getLocation}>Explore!</Button>
+        <Button id="button" onClick={this.getLocation}>
+          Explore!
+        </Button>
         {this.state.locationObj.place_id && (
           <>
             <CityMap
@@ -54,12 +63,22 @@ class Locations extends React.Component {
             />
           </>
         )}
-        {this.state.error&&
-        <Error error={this.state.error} />}
+        {this.state.error && <Error error={this.state.error} />}
 
         {/* //locations will render weather component */}
-        <Weather
-        citySearch = {this.state.citySearch}/>
+
+        <ul>
+          <Weather citySearch={this.state.citySearch} />
+        <Button onClick={this.getWeather}> Get Weather</Button>
+          {this.state.weather.length > 0 &&
+            this.state.weather.map((forecast, idx) => (
+              <li key={idx}>
+                <p>
+                  {forecast.description}: {forecast.date}
+                </p>
+              </li>
+            ))}
+        </ul>
       </Form.Group>
     );
   }
