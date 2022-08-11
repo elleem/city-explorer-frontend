@@ -103,9 +103,9 @@ Actual time needed to complete: 30 minutes
 ################################################################
 
 ## Whiteboard of WRRC
-Collaboration with
+Collaboration with Alejandro Rivera
 
-![Lab 08 Whiteboard](images/)
+![Lab 08 Whiteboard](public/images/lab08miro.jpg)
 
 ## Features for Lab 08
 
