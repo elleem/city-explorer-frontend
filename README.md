@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Lauren Main
-**Version**: 1.0.4
+**Version**: 1.0.5
 
 ## Overview
 [View my Live site at netlify](https://elleemcityexplorer.netlify.app/)<br>
@@ -108,6 +108,42 @@ Collaboration with Alejandro Rivera
 ![Lab 08 Whiteboard](public/images/lab08miro.jpg)
 
 ## Features for Lab 08
+
+Name of feature: Call from weather API
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 7:00pm
+
+Finish time: 10:00pm
+
+Actual time needed to complete: 180 minutes
+
+################################################################
+
+Name of feature: Call from movie API
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+
+################################################################
+
+Name of feature: Deploy to Heroku
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+
+################################################################
 
 ## Whiteboard of WRRC
 Collaboration with

@@ -19,13 +19,15 @@ class Locations extends React.Component {
     };
   }
 
-  getLocation = async (citySearch) => {
+  getLocation = async (search) => {
     try {
       const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.citySearch}&format=json`;
       const response = await axios.get(url);
       //try catch conditional catches the error
-      this.setState({ locationObj: response.data[0], error: null });
-      this.getWeather({citySearch}); 
+      let data = response.data[0]
+      this.setState({ locationObj: response.data[0], lat: data.lat, lon: data.lon, error: null });
+      //this.getWeather(lat, lon);
+      this.getWeather(data.lat, data.lon); 
     } catch (error) {
       if (error.response) {
         let message = `${error.response.data.error}. ${error.message}${error.code}`;
@@ -37,8 +39,8 @@ class Locations extends React.Component {
     }
   };
 
-  getWeather = async () => {
-    const url = `${process.env.REACT_APP_WEATHER_KEY}/weather?searchQuery=${this.props.citySearch}`;
+  getWeather = async (lat,lon) => {
+    const url = `${process.env.REACT_APP_SERVER}/weather?lat=${lat}&lon=${lon}`;
     const response = await axios.get(url);
     console.log(response);
     this.setState({ weather: response.data });
@@ -57,7 +59,6 @@ class Locations extends React.Component {
         {this.state.locationObj.place_id && (
           <>
             <CityMap
-              getLocation={this.state.getLocation}
               citySearch={this.state.locationObj.display_name}
               lat={this.state.locationObj.lat}
               lon={this.state.locationObj.lon}
@@ -69,7 +70,7 @@ class Locations extends React.Component {
         {/* //locations will render weather component */}
 
         <>
-          <Weather citySearch={this.state.citySearch} />
+          {this.state.locationObj.place_id && <Weather weather={this.state.weather} />}
         </>
       </Form.Group>
     );
