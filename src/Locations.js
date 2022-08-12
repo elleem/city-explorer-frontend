@@ -49,14 +49,14 @@ class Locations extends React.Component {
   };
 
   getWeather = async (lat, lon) => {
-    const url = `${process.env.REACT_APP_SERVER}/weather?lat=${lat}&lon=${lon}`;
+    const url = `${process.env.REACT_APP_HEROKU}/weather?lat=${lat}&lon=${lon}`;
     const response = await axios.get(url);
     console.log(response);
     this.setState({ weather: response.data });
   };
 
   getMovies = async () => {
-    const url = `${process.env.REACT_APP_SERVER}/movies?cityMovie=${this.state.citySearch}`;
+    const url = `${process.env.REACT_APP_HEROKU}/movies?cityMovie=${this.state.citySearch}`;
     const response = await axios.get(url);
     console.log(response);
     this.setState({ movies: response.data });
