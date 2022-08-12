@@ -125,7 +125,7 @@ Name of feature: Call from movie API
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: 
+Start time: 3:00pm 
 
 Finish time: 
 
