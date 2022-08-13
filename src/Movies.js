@@ -9,7 +9,7 @@ class Movies extends React.Component {
           {this.props.movies.length > 0 &&
             this.props.movies.map((movie) => (
               <Col>
-                <Card style={{ width: "18rem" }} id="card" className="h-100">
+                <Card style={{ width: "18rem" }} id="card" className="h-100 p-3">
                   <Card.Body>
                     <Card.Title> Title: {movie.title} </Card.Title>
                     <Card.Text>Description: {movie.overview}</Card.Text>
