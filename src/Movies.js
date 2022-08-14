@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import Movie from "./Movie";
+import {Container, Row, Col } from "react-bootstrap";
 
 class Movies extends React.Component {
   render() {
@@ -9,22 +10,16 @@ class Movies extends React.Component {
           {this.props.movies.length > 0 &&
             this.props.movies.map((movie) => (
               <Col>
-                <Card style={{ width: "18rem" }} id="card" className="h-100">
-                  <Card.Body>
-                    <Card.Title> Title: {movie.title} </Card.Title>
-                    <Card.Text>Description: {movie.overview}</Card.Text>
-                    <Card.Img
-                      src={movie.image_url}
-                      alt={movie.title}
-                      rounded="true"
-                    />
-                    <Card.Text>
-                      Votes: {movie.vote_average} Vote Count: {movie.vote_count}{" "}
-                      Popularity: {movie.popularity}{" "}
-                    </Card.Text>
-                    <Card.Text>Release Date: {movie.release_date}</Card.Text>
-                  </Card.Body>
-                </Card>
+                <Movie
+                  title={movie.title}
+                  description={movie.overview}
+                  src={movie.image_url}
+                  alt={movie.title}
+                  votes={movie.vote_average}
+                  vote_count={movie.vote_count}
+                  popularity={movie.popularity}
+                  release_date={movie.release_date}
+                />
               </Col>
             ))}
         </Row>
