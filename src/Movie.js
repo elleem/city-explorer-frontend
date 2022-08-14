@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 class Movie extends React.Component {
   render() {
@@ -15,8 +15,8 @@ class Movie extends React.Component {
                       rounded="true"
                     />
                     <Card.Text>
-                      Votes: {this.props.vote_average} Vote Count: {this.props.vote_count}{" "}
-                      Popularity: {this.props.popularity}{" "}
+                      Votes: {this.props.vote_average} Vote Count: {this.props.vote_count}
+                      Popularity: {this.props.popularity}
                     </Card.Text>
                     <Card.Text>Release Date: {this.props.release_date}</Card.Text>
                   </Card.Body>

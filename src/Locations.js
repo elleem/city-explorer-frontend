@@ -1,12 +1,12 @@
 import React from "react";
 import axios from "axios";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+
 import Container from "react-bootstrap/Container";
 import Error from "./Error";
 import CityMap from "./CityMap";
 import Weather from "./Weather";
 import Movies from "./Movies";
+import Search from "./Search";
 
 class Locations extends React.Component {
   constructor(props) {
@@ -22,13 +22,14 @@ class Locations extends React.Component {
     };
   }
 
-  getLocation = async () => {
+  getLocation = async (citySearch) => {
     try {
-      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.citySearch}&format=json`;
+      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${citySearch}&format=json`;
       const response = await axios.get(url);
       //try catch conditional catches the error
       let data = response.data[0];
       this.setState({
+        // citySearch: '',
         locationObj: response.data[0],
         lat: data.lat,
         lon: data.lon,
@@ -62,21 +63,15 @@ class Locations extends React.Component {
     this.setState({ movies: response.data });
   };
 
+
   render() {
     return (
       <>
-        <Form>
-          <Form.Group id="form">
-            <Form.Control
-              onChange={(e) => this.setState({ citySearch: e.target.value })}
-              placeholder="search for a city"
-            />
-            <Button id="button" onClick={this.getLocation}>
-              Explore!
-            </Button>
-          </Form.Group>
-        </Form>
+        
         <Container>
+        <Search
+        getLocation={this.getLocation}
+              />
         {this.state.locationObj.place_id && (
           <CityMap
             citySearch={this.state.locationObj.display_name}
@@ -84,10 +79,8 @@ class Locations extends React.Component {
             lon={this.state.locationObj.lon}
           />
         )}
-        {this.state.weather.length > 0 && (
           <Weather weather={this.state.weather} />
-        )}
-        {this.state.movies.length > 0 && <Movies movies={this.state.movies} />}
+         <Movies movies={this.state.movies} />
         {this.state.error && <Error error={this.state.error} />}
       </Container>
       </>
