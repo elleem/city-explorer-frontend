@@ -22,20 +22,18 @@ class Locations extends React.Component {
     };
   }
 
-  getLocation = async (citySearch) => {
+  getLocation = async () => {
     try {
-      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${citySearch}&format=json`;
+      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.citySearch}&format=json`;
       const response = await axios.get(url);
       //try catch conditional catches the error
       let data = response.data[0];
       this.setState({
-        // citySearch: '',
         locationObj: response.data[0],
         lat: data.lat,
         lon: data.lon,
         error: null,
       });
-      //this.getWeather(lat, lon);
       this.getWeather(data.lat, data.lon);
       this.getMovies();
     } catch (error) {
@@ -48,6 +46,11 @@ class Locations extends React.Component {
       }
     }
   };
+
+  handleOnChange = (userSearch) =>{
+    this.setState({citySearch: userSearch});
+    console.log(this.state.citySearch)
+  }
 
   getWeather = async (lat, lon) => {
     const url = `${process.env.REACT_APP_HEROKU}/weather?lat=${lat}&lon=${lon}`;
@@ -71,6 +74,7 @@ class Locations extends React.Component {
         <Container>
         <Search
         getLocation={this.getLocation}
+        handleOnChange = {this.handleOnChange}
               />
         {this.state.locationObj.place_id && (
           <CityMap
@@ -80,7 +84,7 @@ class Locations extends React.Component {
           />
         )}
           <Weather weather={this.state.weather} />
-         <Movies movies={this.state.movies} />
+          <Movies movies={this.state.movies} />
         {this.state.error && <Error error={this.state.error} />}
       </Container>
       </>
