@@ -8,9 +8,10 @@ class Movies extends React.Component {
       <Container fluid id="main">
         <Row sm={1} md={2} lg={3} xl={4} xxl={5}>
           {this.props.movies.length > 0 &&
-            this.props.movies.map((movie) => (
+            this.props.movies.map((movie,idx) => (
               <Col>
                 <Movie
+                  key={idx}
                   title={movie.title}
                   description={movie.overview}
                   src={movie.image_url}

@@ -9,8 +9,8 @@ class Search extends React.Component {
         <Form.Group id="form">
           <Form.Label>Enter a City</Form.Label>
           <Form.Control
-            onChange={(e) => this.setState({ citySearch: e.target.value })}/>
-          <Button id="button" onClick={()=>this.props.getLocation(this.state.citySearch)}>
+            onChange={(e) => this.props.handleOnChange(e.target.value)}/>
+          <Button id="button" onClick={()=>this.props.getLocation()}>
             Explore!
           </Button>
         </Form.Group>
