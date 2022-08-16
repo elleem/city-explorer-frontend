@@ -5,7 +5,7 @@ class Movie extends React.Component {
   render() {
     return (
       <>
-        <Card style={{ width: "18rem" }} id="card" className="h-100 p-3"key={this.key}>
+        <Card style={{ width: "18rem" }} id="card" className="h-100 p-3" idx={this.key}>
                   <Card.Body>
                     <Card.Title> Title: {this.props.title} </Card.Title>
                     <Card.Text>Description: {this.props.description}</Card.Text>
