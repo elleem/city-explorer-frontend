@@ -1,7 +1,7 @@
 # City Explorer
 
 **Author**: Lauren Main
-**Version**: 1.0.5
+**Version**: 1.0.11
 
 ## Overview
 [View my Live site at netlify](https://elleemcityexplorer.netlify.app/)<br>
@@ -18,10 +18,11 @@ JavaScript, React, Bootstrap, Node.js
 <li>Initial setup: 8/2/2022</li>
 <li> Locations API added with lon/lat 8/3/2022</li>
 <li> Error message component added 8/4/2022 </li>
-<li> Server added 8/6/2022 </li>
-<li>
-<li>
-<li>
+<li> Server added 8/6/2022</li>
+<li> Movie and Weather APIs added 8/11/2022 </li>
+<li> Deployed to Heroku 8/11/2022
+<li> Refactors into modules and components 8/15/2022 </li>
+<li> Add cache 8/17/2022 </li>
 </ul>
 
 
@@ -177,8 +178,20 @@ Actual time needed to complete: 210 minutes
 ################################################################
 
 ## Whiteboard of WRRC
-Collaboration with
+Collaboration with Lauren Main
 
-![Lab 10 Whiteboard](images/)
+![Lab 10 Whiteboard](public/images/lab10figma.jpg)
 
 ## Features for Lab 10
+
+Name of feature: Add Cache
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 6:45pm
+
+Finish time: 8:30pm
+
+Actual time needed to complete: 105 minutes
+
+################################################################

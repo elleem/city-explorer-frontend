@@ -70,7 +70,7 @@ class Locations extends React.Component {
   getMovies = async () => {
     const url = `${process.env.REACT_APP_HEROKU}/movies?cityMovie=${this.state.citySearch}`;
     axios.get(url).then((response)=>{
-      console.log(response);
+      console.log("movie response data:", response.data);
       this.setState({ movies: response.data });
     }).catch((error)=>{
       this.setState({error:error});
