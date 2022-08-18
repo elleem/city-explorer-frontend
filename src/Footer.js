@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container"
 class Footer extends React.Component{
   render (){
     return (
-      <Container>
+      <Container id = 'footer'>
       
       <h6> created by Lauren</h6>
       
